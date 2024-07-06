@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .slider{
+            position: relative;
+        }
+        .slider-img{
+            width: 100%;
+        }
+        .slider-nav-pre{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 50px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+        .slider-nav-next{
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 50px;
+            background-color: rgba(255, 255, 255, 0.4);
+            border: non;
+        }
+        .slider-nav-next:hover, .slider-nav-pre:hover{
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+        .identicator{
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .identicator-item{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 1px solid gray;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+
+        }
+       .active{
+            background-color: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <button class="slider-nav-pre">
+            <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+        </button>
+        <img class="slide-img" src="/img/sea.jpg" alt="sea">
+        <button class="slider-nav-next">
+           <i class="fa fa-chevron-circle-left" aria-hidden="true"></i> 
+        </button>
+    </div>
+    <div class="identicator">
+        <span class="identicator-item active"></span>
+        <span class="identicator-item"></span>
+        <span class="identicator-item"></span>
+    </div>
+</body>
+</html>

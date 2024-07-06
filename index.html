@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            direction: rtl;
+        }
+        .form-item{
+            position: relative;
+            /* margin-bottom: 25px; */
+            top: 20px;
+            right: 10px;
+           
+
+        }
+        .form-item-label{
+            position: absolute;
+            top: -16px;
+            right: 15px;
+            background-color: rgb(255, 255, 255);
+            padding: 0px 10px;
+        }
+        .form-item-input{
+            padding: 10px 10px;
+            display: block;
+            width: 50%;
+            border-radius: 8px;
+            border: 1px solid gray;
+        }
+        .form-item-input:focus{
+            outline: none;
+            border-color: rgba(9, 9, 226, 0.863);
+        }
+        .consale{
+            background-color: lightgray;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .consale-title, .consale-text{
+            margin-bottom: 20px;
+        }
+        .consale-btn{
+            background-color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 15px;
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="form-item">
+    <label for="" class="form-item-label">نام</label>
+    <input type="text" placeholder="نام" class="form-item-input">
+   </div>
+   <br><br><br><br><br><br><br><br><br><br>
+   <div class="consale">
+    <h3 class="consale-title">
+        نیاز به مشاوره دارید؟
+    </h3>
+    <p class="consale-text">
+        همکاران ما آماده پاسخ گویی به سولات شما می باشند.
+    </p>
+    <a href="#" class="consale-btn"><span>سعادت آباد</span><i class="fa fa-chevron-down" aria-hidden="true" style="margin-right: 10px;"></i></a>
+   </div>
+</body>
+</html>
